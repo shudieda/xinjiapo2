@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      width: 1125px;
+      overflow: hidden;
+      height: 2436px;
+    }
+
+    @font-face {
+      font-family: PingFang;
+      src: url("font/PingFang Heavy.ttf");
+    }
+    @font-face {
+      font-family: 英文;
+      src: url("font/cordiab.ttf");
+    }
+    @font-face {
+      font-family: 方正黑;
+      src: url("font/方正黑.ttf");
+    }
+
+    @font-face {
+      font-family: 苹方香港;
+      src: url("font/苹方香港.ttf");
+    }
+    @font-face {
+      font-family: 汉仪雅酷黑65W;
+      src: url("font/汉仪雅酷黑65W.ttf");
+    }
+
+    @font-face {
+      font-family: 支付宝;
+      src: url("font/IRANSansWeb.TTF");
+    }
+
+    .ao1:hover {
+      background-image: url('img/1x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao1 img:hover{
+      opacity: 0;
+    }
+
+    .ao2:hover {
+      background-image: url('img/2x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao2 img:hover{
+      opacity: 0;
+    }
+
+    .ao3:hover {
+      background-image: url('img/3x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao3 img:hover{
+      opacity: 0;
+    }
+
+    .ao4:hover {
+      background-image: url('img/4x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao4 img:hover{
+      opacity: 0;
+    }
+
+    .ao5:hover {
+      background-image: url('img/5x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao5 img:hover{
+      opacity: 0;
+    }
+
+    .ao6:hover {
+      background-image: url('img/6x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao6 img:hover{
+      opacity: 0;
+    }
+
+    .ao7:hover {
+      background-image: url('img/7x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao7 img:hover{
+      opacity: 0;
+    }
+
+    .ao8:hover {
+      background-image: url('img/8x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao8 img:hover{
+      opacity: 0;
+    }
+
+    .ao9:hover {
+      background-image: url('img/9x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao9 img:hover{
+      opacity: 0;
+    }
+
+    .ao10:hover {
+      background-image: url('img/10x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao10 img:hover{
+      opacity: 0;
+    }
+
+    .ao11:hover {
+      background-image: url('img/11x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao11 img:hover{
+      opacity: 0;
+    }
+
+    .ao12:hover {
+      background-image: url('img/12x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao12 img:hover{
+      opacity: 0;
+    }
+
+    .ao13:hover {
+      background-image: url('img/13x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao13 img:hover{
+      opacity: 0;
+    }
+
+    .ao14:hover {
+      background-image: url('img/14x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao14 img:hover{
+      opacity: 0;
+    }
+
+    .ao15:hover {
+      background-image: url('img/15x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao15 img:hover{
+      opacity: 0;
+    }
+
+    .ao16:hover {
+      background-image: url('img/16x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao16 img:hover{
+      opacity: 0;
+    }
+
+  </style>
+</head>
+<body oncontextmenu=self.event.returnValue=false style="background-color: rgb(218,185,149)">
+<button class="save-img" onclick="savaData()"
+        style="color: rgb(218,185,149); position: absolute;border: none; padding:5px 5px 5px 5px;font-weight:550;background-color: transparent;border-radius:10px;margin-left:1300px; font-size: 35px;">保存图片
+</button>
+<div class="box">
+  <div style="background-image: url('img/xinjiapo2.png');height: 2436px;width: 1125px;display: flex;position:relative;">
+    <div contenteditable class="text7392" style="font-weight:600; font-family: 支付宝;position:absolute;display: inline-block;right: 90px; margin-top:668px; margin-left: auto;color: rgb(204,212,219);font-size: 70px;">1.00</div>
+
+    <div contenteditable class="text7393" style="font-weight:600; font-family: 支付宝;position:absolute;display: inline-block;left: 88px;top:910px;color: rgb(0,0,0);font-size: 44px;letter-spacing: 1px;">POSB Passbook Savings Account</div>
+
+    <div style="position: absolute;left: 88px;top:978px;">
+    <div contenteditable class="text7394" style="font-weight:; font-family: 支付宝;display: inline-block;color: rgb(143,147,150);font-size: 33px;">068-86498-4</div>
+      <div contenteditable class="" style="font-weight:; font-family: 支付宝;display: inline-block;color: rgb(143,147,150);font-size: 32px;margin-left: 5px;">SGD</div>
+    </div>
+
+    <div contenteditable class="text7395" style="font-weight:600; font-family: 支付宝;position:absolute;display: inline-block;left: 88px;top:1116px;color: rgb(0,0,0);font-size: 44px;letter-spacing: 2px;">Cerrisia</div>
+
+    <div contenteditable class="text7396" style="font-weight:; font-family: 支付宝;position:absolute;display: inline-block;left: 88px;top:1185px;color: rgb(143,147,150);font-size: 33px;letter-spacing: px;">UNITED OVERSEAS BANK LTD7013175326</div>
+
+    <div contenteditable class="text7397" style="font-weight:600; font-family: 支付宝;position:absolute;display: inline-block;left: 88px;top:1324px;color: rgb(0,0,0);font-size: 43px;letter-spacing: 2px;">26 May 2021</div>
+
+    <div contenteditable class="text7398" style="font-weight:600; font-family: 支付宝;position:absolute;display: inline-block;left: 88px;top:1482px;color: rgb(0,0,0);font-size: 43px;letter-spacing: 2px;">Fast</div>
+
+    <div style="position: absolute;left: 88px;top:1638px;">
+      <div contenteditable class="" style="font-weight:600; font-family: 支付宝;display: inline-block;color: rgb(0,0,0);font-size: 43px;letter-spacing: 2px;">SGD</div>
+      <div contenteditable class="text7399" style="font-weight:600; font-family: 支付宝;display: inline-block;color: rgb(0,0,0);font-size: 43px;margin-left: 7px;letter-spacing: 2px;">300.00</div>
+    </div>
+
+    <div contenteditable class="text7400" style="font-weight:600; font-family: 支付宝;position:absolute;display: inline-block;left: 88px;top:1793px;color: rgb(0,0,0);font-size: 43px;letter-spacing: 2px;">Others</div>
+
+    <div style="position: absolute;left: 88px;top:1950px;">
+      <div contenteditable class="" style="font-weight:600; font-family: 支付宝;display: inline-block;color: rgb(0,0,0);font-size: 43px;letter-spacing: 2px;">SGD</div>
+      <div contenteditable class="text7401" style="font-weight:600; font-family: 支付宝;display: inline-block;color: rgb(0,0,0);font-size: 43px;margin-left: 7px;letter-spacing: 2px;">0.00</div>
+    </div>
+
+    <div contenteditable class="text7402" style="font-weight:600; font-family: 支付宝;position:absolute;display: inline-block;left: 88px;top:2104px;color: rgb(0,0,0);font-size: 44px;letter-spacing: 2px;">Reload</div>
+
+    <div contenteditable class="text7403" style="font-weight:400; font-family: 支付宝;position:absolute;display: inline-block;left: 88px;top:2258px;color: rgb(93,139,128);font-size: 44px;letter-spacing: 2px;">Successful</div>
+
+  </div>
+</div>
+
+<div style="position: absolute;left: 1100px;top: -100px;width: 1000px;height: 2000px;">
+
+  <div style="display: inline-block; position: absolute;right: 700px;top: 300px; font-size: 45px;">数量：
+    <div class="textG209" contenteditable
+         style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 45px;width: 700px;background-color: #FFFFFF;">1.00</div>
+  </div>
+
+  <div style="display: inline-block; position: absolute;right: 700px;top: 450px; font-size: 39px;">From：
+    <div class="textG210" contenteditable
+         style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 42px;width: 700px;background-color: #FFFFFF;">POSB Passbook Savings Account</div>
+  </div>
+
+  <div style="display: inline-block; position: absolute;right: 700px;top:600px; font-size: 45px;">：
+    <div class="textG211" contenteditable
+         style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 42px;width: 700px;background-color: #FFFFFF;">068-86498-4</div>
+  </div>
+
+  <div style="display: inline-block; position: absolute;right: 700px;top:750px; font-size: 45px;">To：
+    <div class="textG212" contenteditable
+         style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 45px;width: 700px;background-color: #FFFFFF;">Cerrisia</div>
+  </div>
+
+  <div style="display: inline-block; position: absolute;right: 700px;top:900px; font-size: 45px;">：
+    <div class="textG213" contenteditable
+         style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 45px;width: 700px;background-color: #FFFFFF;">UNITED OVERSEAS BANK LTD7013175326</div>
+  </div>
+
+  <div style="display: inline-block; position: absolute;right: 700px;top:1050px; font-size: 45px;">When：
+    <div class="textG214" contenteditable
+         style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 45px;width: 700px;background-color: #FFFFFF;">26 May 2021</div>
+  </div>
+
+  <div style="display: inline-block; position: absolute;right: 700px;top:1200px; font-size: 45px;">Service：
+    <div class="textG215" contenteditable
+         style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 45px;width: 700px;background-color: #FFFFFF;">Fast</div>
+  </div>
+
+  <div style="display: inline-block; position: absolute;right: 700px;top:1350px; font-size: 45px;">Amount：
+    <div class="textG216" contenteditable
+         style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 45px;width: 700px;background-color: #FFFFFF;">300.00</div>
+  </div>
+
+  <div style="display: inline-block; position: absolute;right: 700px;top:1500px; font-size: 45px;">Purpose：
+    <div class="textG217" contenteditable
+         style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 45px;width: 700px;background-color: #FFFFFF;">Others</div>
+  </div>
+
+  <div style="display: inline-block; position: absolute;right: 700px;top:1650px; font-size: 40px;">Service Fee：
+    <div class="textG218" contenteditable
+         style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 45px;width: 700px;background-color: #FFFFFF;">0.00</div>
+  </div>
+
+  <div style="display: inline-block; position: absolute;right: 700px;top:1800px; font-size: 43px;">Comments：
+    <div class="textG219" contenteditable
+         style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 45px;width: 700px;background-color: #FFFFFF;">Reload</div>
+  </div>
+
+  <div style="display: inline-block; position: absolute;right: 700px;top:1950px; font-size: 45px;">Status：
+    <div class="textG220" contenteditable
+         style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 45px;width: 700px;background-color: #FFFFFF;">Successful</div>
+  </div>
+
+</div>
+
+<div style="position: absolute;left:2110px;top:150px;width: 500px;height: 2000px;">
+
+  <a class="ao1" href="http://sblaojiaoshu.com/xinjiapo1/" style="position: absolute; top:100px;left: 20px;">
+    <img src="img/1.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao2" href="http://sblaojiaoshu.com/xinjiapo2/" style="position: absolute; top:100px;left: 250px;">
+    <img src="img/2x.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao3" href="http://sblaojiaoshu.com/xinjiapo3/" style="position: absolute; top:100px;left: 480px;">
+    <img src="img/3.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao4" href="http://sblaojiaoshu.com/xinjiapo4/" style="position: absolute; top:320px;left: 20px;">
+    <img src="img/4.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao5" href="http://sblaojiaoshu.com/xinjiapo5/" style="position: absolute; top:320px;left: 250px;">
+    <img src="img/5.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao6" href="http://sblaojiaoshu.com/xinjiapo6/" style="position: absolute; top:320px;left: 480px;">
+    <img src="img/6.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao7" href="http://sblaojiaoshu.com/xinjiapo7/" style="position: absolute; top:540px;left: 20px;">
+    <img src="img/7.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao8" href="http://sblaojiaoshu.com/xinjiapo8/" style="position: absolute; top:540px;left: 250px;">
+    <img src="img/8.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao9" href="http://sblaojiaoshu.com/xinjiapo9/" style="position: absolute; top:540px;left: 480px;">
+    <img src="img/9.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao10" href="http://sblaojiaoshu.com/xinjiapo10/" style="position: absolute; top:760px;left: 20px;">
+    <img src="img/10.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao11" href="http://sblaojiaoshu.com/xinjiapo11/" style="position: absolute; top:760px;left: 250px;">
+    <img src="img/11.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao12" href="http://sblaojiaoshu.com/xinjiapo12/" style="position: absolute; top:760px;left: 480px;">
+    <img src="img/12.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao13" href="http://sblaojiaoshu.com/xinjiapo13/" style="position: absolute; top:980px;left: 20px;">
+    <img src="img/13.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao14" href="http://sblaojiaoshu.com/xinjiapo14/" style="position: absolute; top:980px;left: 250px;">
+    <img src="img/14.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao15" href="http://sblaojiaoshu.com/xinjiapo15/" style="position: absolute; top:980px;left: 480px;">
+    <img src="img/15.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao16" href="http://sblaojiaoshu.com/xinjiapo16/" style="position: absolute; top:1200px;left: 20px;">
+    <img src="img/16.png" style="width: 200px; height: 170px;">
+  </a>
+
+</div>
+
+<!-- 引入 html2canvas -->
+<script src="html2canvas.js"></script>
+<!-- 引入自行封装的截图插件 -->
+<script src="screen-shot-az.js"></script>
+
+<script>
+  var ua = navigator.userAgent;
+  if(ua !== "Mozilla/5.0 (Windows NT 10.0; Win64; x64; ed)"){
+    document.querySelector("body").style="display: none;"
+  }
+</script>
+
+<script>
+  // 获取组件盒子
+  let box = document.querySelector('.box')
+
+  // 获取保存按钮
+  let saveImg = document.querySelector('.save-img')
+
+  // 点击保存按钮
+  saveImg.addEventListener('click', () => {
+    saveImgFn('微信图片')
+  })
+
+  // 保存图片的方法
+  async function saveImgFn(downloadName) {
+    // 获取需要转换的dom
+    // html2canvas(document.querySelector('.bbx'))
+    //     .then(canvas => {
+    //         let imgUrl = canvas.toDataURL('image/jpg')
+    //         let image = document.createElement('img')
+    //         image.src = imgUrl
+    //         let a = document.createElement('a')
+    //         a.href = imgUrl
+    //         a.download = name // 自定义名称
+    //         a.click()
+    //     })
+
+    // 截图模块
+    let canvasBox = document.querySelector('.box')
+    // 使用自定义方法进行转换
+    await getHtmlImage({canvasBox,downloadName})
+
+  }
+
+</script>
+
+<script>
+
+  let text1 = document.querySelector(".text7392")
+  let text2 = document.querySelector(".textG209")
+
+  twoWayBinding(text1, text2)
+  twoWayBinding(text2, text1)
+
+  function twoWayBinding(ele1, ele2) {
+    ele1.addEventListener('input', () => {
+      ele2.innerText = ele1.innerText
+    })
+  }
+</script>
+
+<script>
+
+  let text3 = document.querySelector(".text7393")
+  let text4 = document.querySelector(".textG210")
+
+  twoWayBinding(text3, text4)
+  twoWayBinding(text4, text3)
+
+  function twoWayBinding(ele1, ele2) {
+    ele1.addEventListener('input', () => {
+      ele2.innerText = ele1.innerText
+    })
+  }
+</script>
+
+<script>
+
+  let text5 = document.querySelector(".text7394")
+  let text6 = document.querySelector(".textG211")
+
+  twoWayBinding(text5, text6)
+  twoWayBinding(text6, text5)
+
+  function twoWayBinding(ele1, ele2) {
+    ele1.addEventListener('input', () => {
+      ele2.innerText = ele1.innerText
+    })
+  }
+</script>
+
+<script>
+
+  let text7 = document.querySelector(".text7395")
+  let text8 = document.querySelector(".textG212")
+
+  twoWayBinding(text7, text8)
+  twoWayBinding(text8, text7)
+
+  function twoWayBinding(ele1, ele2) {
+    ele1.addEventListener('input', () => {
+      ele2.innerText = ele1.innerText
+    })
+  }
+</script>
+
+<script>
+
+  let text9 = document.querySelector(".text7396")
+  let text10 = document.querySelector(".textG213")
+
+  twoWayBinding(text9, text10)
+  twoWayBinding(text10, text9)
+
+  function twoWayBinding(ele1, ele2) {
+    ele1.addEventListener('input', () => {
+      ele2.innerText = ele1.innerText
+    })
+  }
+</script>
+
+<script>
+
+  let text11 = document.querySelector(".text7397")
+  let text12 = document.querySelector(".textG214")
+
+  twoWayBinding(text11, text12)
+  twoWayBinding(text12, text11)
+
+  function twoWayBinding(ele1, ele2) {
+    ele1.addEventListener('input', () => {
+      ele2.innerText = ele1.innerText
+    })
+  }
+</script>
+
+<script>
+
+  let text13 = document.querySelector(".text7398")
+  let text14 = document.querySelector(".textG215")
+
+  twoWayBinding(text13, text14)
+  twoWayBinding(text14, text13)
+
+  function twoWayBinding(ele1, ele2) {
+    ele1.addEventListener('input', () => {
+      ele2.innerText = ele1.innerText
+    })
+  }
+</script>
+
+<script>
+
+  let text15 = document.querySelector(".text7399")
+  let text16 = document.querySelector(".textG216")
+
+  twoWayBinding(text15, text16)
+  twoWayBinding(text16, text15)
+
+  function twoWayBinding(ele1, ele2) {
+    ele1.addEventListener('input', () => {
+      ele2.innerText = ele1.innerText
+    })
+  }
+</script>
+
+<script>
+
+  let text17 = document.querySelector(".text7400")
+  let text18 = document.querySelector(".textG217")
+
+  twoWayBinding(text17, text18)
+  twoWayBinding(text18, text17)
+
+  function twoWayBinding(ele1, ele2) {
+    ele1.addEventListener('input', () => {
+      ele2.innerText = ele1.innerText
+    })
+  }
+</script>
+
+<script>
+
+  let text19 = document.querySelector(".text7401")
+  let text20 = document.querySelector(".textG218")
+
+  twoWayBinding(text19, text20)
+  twoWayBinding(text20, text19)
+
+  function twoWayBinding(ele1, ele2) {
+    ele1.addEventListener('input', () => {
+      ele2.innerText = ele1.innerText
+    })
+  }
+</script>
+
+<script>
+
+  let text21 = document.querySelector(".text7402")
+  let text22 = document.querySelector(".textG219")
+
+  twoWayBinding(text21, text22)
+  twoWayBinding(text22, text21)
+
+  function twoWayBinding(ele1, ele2) {
+    ele1.addEventListener('input', () => {
+      ele2.innerText = ele1.innerText
+    })
+  }
+</script>
+
+<script>
+
+  let text23 = document.querySelector(".text7403")
+  let text24 = document.querySelector(".textG220")
+
+  twoWayBinding(text23, text24)
+  twoWayBinding(text24, text23)
+
+  function twoWayBinding(ele1, ele2) {
+    ele1.addEventListener('input', () => {
+      ele2.innerText = ele1.innerText
+    })
+  }
+</script>
+
+<script>
+  // 需要保存数据的元素
+
+  let text7392 = document.querySelector('.text7392')
+  let text7393 = document.querySelector('.text7393')
+  let text7394 = document.querySelector('.text7394')
+  let text7395 = document.querySelector('.text7395')
+  let text7396 = document.querySelector('.text7396')
+  let text7397 = document.querySelector('.text7397')
+  let text7398 = document.querySelector('.text7398')
+  let text7399 = document.querySelector('.text7399')
+  let text7400 = document.querySelector('.text7400')
+  let text7401 = document.querySelector('.text7401')
+  let text7402 = document.querySelector('.text7402')
+  let text7403 = document.querySelector('.text7403')
+
+
+
+  let textG209 = document.querySelector('.textG209')
+  let textG210 = document.querySelector('.textG210')
+  let textG211 = document.querySelector('.textG211')
+  let textG212 = document.querySelector('.textG212')
+  let textG213 = document.querySelector('.textG213')
+  let textG214 = document.querySelector('.textG214')
+  let textG215 = document.querySelector('.textG215')
+  let textG216 = document.querySelector('.textG216')
+  let textG217 = document.querySelector('.textG217')
+  let textG218 = document.querySelector('.textG218')
+  let textG219 = document.querySelector('.textG219')
+  let textG220 = document.querySelector('.textG220')
+
+
+  getData()
+
+  // 页面初始化获取文字
+  function getData() {
+
+    let localText7392 = localStorage.getItem('text7392')
+    let localText7393 = localStorage.getItem('text7393')
+    let localText7394 = localStorage.getItem('text7394')
+    let localText7395 = localStorage.getItem('text7395')
+    let localText7396 = localStorage.getItem('text7396')
+    let localText7397 = localStorage.getItem('text7397')
+    let localText7398 = localStorage.getItem('text7398')
+    let localText7399 = localStorage.getItem('text7399')
+    let localText7400 = localStorage.getItem('text7400')
+    let localText7401 = localStorage.getItem('text7401')
+    let localText7402 = localStorage.getItem('text7402')
+    let localText7403 = localStorage.getItem('text7403')
+
+
+
+    let localTextG209 = localStorage.getItem('textG209')
+    let localTextG210 = localStorage.getItem('textG210')
+    let localTextG211 = localStorage.getItem('textG211')
+    let localTextG212 = localStorage.getItem('textG212')
+    let localTextG213 = localStorage.getItem('textG213')
+    let localTextG214 = localStorage.getItem('textG214')
+    let localTextG215 = localStorage.getItem('textG215')
+    let localTextG216 = localStorage.getItem('textG216')
+    let localTextG217 = localStorage.getItem('textG217')
+    let localTextG218 = localStorage.getItem('textG218')
+    let localTextG219 = localStorage.getItem('textG219')
+    let localTextG220 = localStorage.getItem('textG220')
+
+
+
+
+
+    if (localText7392) text7392.innerText = localText7392
+    if (localText7393) text7393.innerText = localText7393
+    if (localText7394) text7394.innerText = localText7394
+    if (localText7395) text7395.innerText = localText7395
+    if (localText7396) text7396.innerText = localText7396
+    if (localText7397) text7397.innerText = localText7397
+    if (localText7398) text7398.innerText = localText7398
+    if (localText7399) text7399.innerText = localText7399
+    if (localText7400) text7400.innerText = localText7400
+    if (localText7401) text7401.innerText = localText7401
+    if (localText7402) text7402.innerText = localText7402
+    if (localText7403) text7403.innerText = localText7403
+
+
+
+
+    if (localTextG209) textG209.innerText = localTextG209
+    if (localTextG210) textG210.innerText = localTextG210
+    if (localTextG211) textG211.innerText = localTextG211
+    if (localTextG212) textG212.innerText = localTextG212
+    if (localTextG213) textG213.innerText = localTextG213
+    if (localTextG214) textG214.innerText = localTextG214
+    if (localTextG215) textG215.innerText = localTextG215
+    if (localTextG216) textG216.innerText = localTextG216
+    if (localTextG217) textG217.innerText = localTextG217
+    if (localTextG218) textG218.innerText = localTextG218
+    if (localTextG219) textG219.innerText = localTextG219
+    if (localTextG220) textG220.innerText = localTextG220
+
+  }
+
+
+  // 保存数据的方法
+  function savaData() {
+    localStorage.setItem('text7392', text7392.innerText)
+    localStorage.setItem('text7393', text7393.innerText)
+    localStorage.setItem('text7394', text7394.innerText)
+    localStorage.setItem('text7395', text7395.innerText)
+    localStorage.setItem('text7396', text7396.innerText)
+    localStorage.setItem('text7397', text7397.innerText)
+    localStorage.setItem('text7398', text7398.innerText)
+    localStorage.setItem('text7399', text7399.innerText)
+    localStorage.setItem('text7400', text7400.innerText)
+    localStorage.setItem('text7401', text7401.innerText)
+    localStorage.setItem('text7402', text7402.innerText)
+    localStorage.setItem('text7403', text7403.innerText)
+
+
+    localStorage.setItem('textG209', textG209.innerText)
+    localStorage.setItem('textG210', textG210.innerText)
+    localStorage.setItem('textG211', textG211.innerText)
+    localStorage.setItem('textG212', textG212.innerText)
+    localStorage.setItem('textG213', textG213.innerText)
+    localStorage.setItem('textG214', textG214.innerText)
+    localStorage.setItem('textG215', textG215.innerText)
+    localStorage.setItem('textG216', textG216.innerText)
+    localStorage.setItem('textG217', textG217.innerText)
+    localStorage.setItem('textG218', textG218.innerText)
+    localStorage.setItem('textG219', textG219.innerText)
+    localStorage.setItem('textG220', textG220.innerText)
+
+  }
+
+</script>
+</body>
+</html>
